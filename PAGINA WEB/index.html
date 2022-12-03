@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="CSS/style.css">
+   
+    <title>IRIS</title>
+
+</head>
+<body>
+
+    <div class="head">
+
+        <div class="logo">
+            <a href="#">IRIS</a>
+        </div>
+        
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#Nosotros">Nosotros</a>
+            <a href="#Contacto">CONTACTO</a>
+            
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        
+        <h2 id="inicio" class="title">¿Quieres tener una agenda personalizada para tu negocio?</h2>
+        <img src="img/iris.png" width="100" height="100" alt="InternetCtrl">
+        
+        <p>
+            Tenemos una gran variedad de estilos de agendas, son 100% personalizadas,se adecuan a tus necesidades
+            Somos  la mejor empresa de diseño y manejamos los tiempos de entrega mas rapidos del mercado 
+          
+        </p>
+        <img src="img/ejem.png" width="100" height="100" >
+    </header>
+
+    <section class="content sau">
+        <h2 id="Nosotros" class="title">Nosotros</h2>
+        <p> Somos una empresa dedicada a crear agendas personalizadas para tu negocio,nosotros nos encargarmos
+            de la planecion,la estructura de toda la agenda para que quede lo mejor personalizada 
+            para su optimo funcionamiento 
+        </p>
+        
+        <div class="box-container">
+
+            <div class="box">
+                <img src="img/dise.png">
+                <h3>Diseño</h3>
+                <p>Puedes elegir el diseño que desees sin costo adicional</p>
+            </div>
+            <div class="box">
+                <img src="img/dine.png">
+                <h3>Precio</h3>
+                <p>Manejamos los meres precios del mercado</p>
+            </div>
+            <div class="box">
+               
+                <img src="img/tiemp.png">
+                <h3>Tiempo</h3>
+                <p>Tenemos el mejor tiempo de entrega del mercado</p>
+            </div>
+
+        </div>
+
+    </section>
+
+   
+
+    <section class="content price">
+
+        <article class="contain">
+            <h2 class="title">DevOps </h2>
+            <p>Nuestros servicios DevOps permiten un movimiento organizacional y cultural que tiene como objetivo aumentar la velocidad de 
+              entrega de software, mejorar la confiabilidad del servicio y crear una propiedad 
+              compartida entre los interesados en el software. Aprenda a mejorar la velocidad, estabilidad, disponibilidad y seguridad
+               de su capacidad de entrega de software.
+            </p>
+
+            
+
+        </article>
+
+    </section>
+
+    <section class="content contact">
+        
+        <div class="container">
+          <form action="php/guardar.php" method="post" class="form" id="form" autocomplete="off">
+            <h2 id="Contacto" class="title">Contacto</h2>
+            <!-- Nombre --> 
+          <div class="form-input Nombre">
+            <label for="Nombre">Nombre</label>
+          <input type="text" id="Nombre" >
+          <p class="mensajeError"></p>
+        </div>
+        <!-- Apellidos --> 
+        <div class="form-input Apellidos">
+            <label for="Apellidos">Apellidos</label>
+          <input type="text" id="Apellidos" >
+          <p class="mensajeError"></p>
+        </div>
+        <!-- Correo --> 
+        <div class="form-input Correo">
+            <label for="Correo">Correo electrónico</label>
+          <input type="email" id="Correo" >
+          <p class="mensajeError"></p>
+        </div>
+        <!-- Celular --> 
+        <div class="form-input Celular">
+            <label for="Celular">Celular</label>
+          <input type="text" id="Celular" >
+          <p class="mensajeError"></p>
+        </div>
+        <!-- tagenda --> 
+        <div class="form-input tagenda">
+            <label for="tagenda">Tipo de agenda</label>
+          <input type="tagenda" id="tagenda" >
+          <p class="mensajeError"></p>
+        </div>
+          <!-- Presupuesto --> 
+        <div class="form-input Presupuesto">
+            <label for="Presupuesto">Presupuesto</label>
+          <input type="Presupuesto" id="Presupuesto" >
+          <p class="mensajeError"></p>
+        </div>
+        <!-- Terminos --> 
+        <div class="form-termsAndConditions termsAndConditions">
+          <input type="checkbox" id="termsAndConditions">
+          <label for="termsAndConditions">He leído y acepto los </label>
+          <a href="#">Términos y Condiciones</a>
+          <p class="mensajeError"></p>
+        </div>
+        <div class="form-boton" >
+          <input type="submit" value="Enviar">
+        </div>
+        <p class="mensajeCorrecto"></p>
+      </form>
+    </div>
+    <script src="js/form.js"></script>
+    </form>
+        </body>
+</body>
+</html>
